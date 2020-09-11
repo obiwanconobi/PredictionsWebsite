@@ -72,8 +72,7 @@ class DataSource
 
         $stmt = $this->conn->prepare($query);
 
-        $sql = 1;
-
+        
         if(!empty($paramType) && !empty($paramArray)) {
             $this->bindQueryParams($query, $paramType, $paramArray);
         }
