@@ -12,15 +12,17 @@ class DataSource
 
     // PHP 7.1.0 visibility modifiers are allowed for class constants.
     // when using above 7.1.0, declare the below constants as private
-    const HOST = 'localhost';
+    const HOST = 'connerpanaro.com';
 
-    const USERNAME = 'root';
+    const USERNAME = 'connowte_admin';
 
-    const PASSWORD = '';
+    const PASSWORD = 'pedersen-tugay-dunn';
 
-    const DATABASENAME = 'predictionsApp';
+    const DATABASENAME = 'connowte_predictionsapp';
 
     private $conn;
+
+    
 
     /**
      * PHP implicitly takes care of cleanup for default connection types.
@@ -62,12 +64,18 @@ class DataSource
      * @param array $paramArray
      * @return array
      */
+    
+
     public function select($query, $paramType="", $paramArray=array())
     {
+        
+
         $stmt = $this->conn->prepare($query);
 
+        $sql = 1;
+
         if(!empty($paramType) && !empty($paramArray)) {
-            $this->bindQueryParams($sql, $paramType, $paramArray);
+            $this->bindQueryParams($query, $paramType, $paramArray);
         }
 
         $stmt->execute();

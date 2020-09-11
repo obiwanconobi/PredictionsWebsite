@@ -9,10 +9,10 @@ function test_input($data) {
 
 session_start();
 // Change this to your connection info.
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'predictionsApp';
+$DATABASE_HOST = 'connerpanaro.com';
+$DATABASE_USER = 'connowte_admin';
+$DATABASE_PASS = 'pedersen-tugay-dunn';
+$DATABASE_NAME = 'connowte_predictionsapp';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
