@@ -10,10 +10,10 @@ $_SESSION['event_id_1'] = $eventId;
 $user_id = $_SESSION['user_id'];
 
 
-$DATABASE_HOST = 'connerpanaro.com';
-$DATABASE_USER = 'connowte_admin';
-$DATABASE_PASS = 'pedersen-tugay-dunn';
-$DATABASE_NAME = 'connowte_predictionsapp';
+$DATABASE_HOST = 'panaro.uk';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '68p$t?x0V_';
+$DATABASE_NAME = 'predictionsApp';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
