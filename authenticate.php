@@ -1,10 +1,10 @@
 <?php
 session_start();
 // Change this to your connection info.
-$DATABASE_HOST = 'connerpanaro.com';
-$DATABASE_USER = 'connowte_admin';
-$DATABASE_PASS = 'pedersen-tugay-dunn';
-$DATABASE_NAME = 'connowte_predictionsapp';
+$DATABASE_HOST = 'panaro.uk';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'predictionsApp';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
